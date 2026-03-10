@@ -1,4 +1,4 @@
-const { collectGithubEvidence } = require("./githubEvidence.service");
+const { collectGithubEvidence } = require("../githubEvidence.service");
 const { scoreSkill } = require("../engines/scoring.engine");
 
 async function evaluateSkills({ githubUsername, skillClaims }) {
@@ -35,3 +35,4 @@ async function evaluateSkills({ githubUsername, skillClaims }) {
 }
 
 module.exports = { evaluateSkills };
+
