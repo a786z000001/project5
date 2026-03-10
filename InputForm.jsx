@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { evaluateCandidate } from "../api";
+import { evaluateCandidate } from "./api";
 
 export default function InputForm({ onResult }) {
   const [githubUsername, setGithubUsername] = useState("");
@@ -66,3 +66,4 @@ const styles = {
     cursor: "pointer"
   }
 };
+
