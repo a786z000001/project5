@@ -1,5 +1,5 @@
-import InputForm from "./components/InputForm";
-import Results from "./components/Results";
+import InputForm from "./InputForm";
+import Results from "./Results";
 import { useState } from "react";
 
 export default function App() {
@@ -45,3 +45,4 @@ const styles = {
     color: "#6b7280"
   }
 };
+
