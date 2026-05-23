@@ -1,5 +1,5 @@
 export async function evaluateCandidate(data) {
-  const response = await fetch("/api/evaluate", {
+  const response = await fetch("http://localhost:3001/api/evaluate", {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
