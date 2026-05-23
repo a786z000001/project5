@@ -11,7 +11,7 @@ app.use(cors());              // ✅ Express 4 handles OPTIONS correctly
 app.use(express.json());
 app.use(requestIdMiddleware);
 
-app.use("/", evaluateRoutes);
+app.use("/api", evaluateRoutes);
 
 app.use(errorMiddleware);
 
