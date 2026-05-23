@@ -1,15 +1,17 @@
+
+const API_BASE =
+  import.meta.env.VITE_API_URL || "http://localhost:3001";
+
 export async function evaluateCandidate(data) {
-  const response = await fetch("http://localhost:3001/api/evaluate", {
+  const response = await fetch(`${API_BASE}/api/evaluate`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json"
     },
     body: JSON.stringify(data)
   });
-
-  if (!response.ok) {
+if (!response.ok) {
     throw new Error("Evaluation request failed");
   }
-
   return response.json();
 }
